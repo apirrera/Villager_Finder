@@ -28,7 +28,7 @@ function Navbar() {
 								aria-current="page"
 								href="#"
 							>
-								Species
+								Villagers
 							</Link>
 						</li>
 					</ul>
@@ -44,7 +44,7 @@ function Navbar() {
 						</button>
             <button className="me-2">Favorites</button>
             <button className="me-2">Register</button>
-            <button className="me-2">Login</button>
+            <button className="me-2" >Login</button>
 					</form>
 				</div>
 			</div>
