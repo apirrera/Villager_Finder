@@ -54,8 +54,25 @@ function Navbar() {
 							Search
 						</button>
             <button className="me-2">Favorites</button>
-            <button className="me-2">Register</button>
-            <button className="me-2" >Login</button>
+    
+    <button className="me-2"><Link 
+                to="/register"
+								className="nav-link"
+								aria-current="page"
+								href="#"
+							>
+								Register
+							</Link></button>
+    
+            <button className="me-2" ><Link
+								to="/login"
+								className="nav-link"
+								aria-current="page"
+								href="#"
+							>
+								Login
+							</Link></button>
+    
 					</form>
 				</div>
 			</div>
