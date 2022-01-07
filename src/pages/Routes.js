@@ -3,6 +3,7 @@ import {Route, Switch} from "react-router-dom";
 import Home from "./Home";
 import RegistrationForm from "./registration/RegistrationPage";
 import LoginForm from "./login/LoginForm";
+import Villagers from "../components/Villagers";
 
 function Routes(){
   return (
@@ -15,6 +16,8 @@ function Routes(){
       </Route>
       <Route exact={true} path='/login'>
       <LoginForm />
+      <Route path="/villagers">
+        <Villagers />
       </Route>
     </Switch>
   )

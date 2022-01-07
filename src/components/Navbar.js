@@ -23,7 +23,7 @@ function Navbar() {
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 						<li className="nav-item">
 							<Link
-								to="/species"
+								to="/villagers"
 								className="nav-link"
 								aria-current="page"
 								href="#"
@@ -31,6 +31,17 @@ function Navbar() {
 								Villagers
 							</Link>
 						</li>
+						<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Species</a></li>
+            <li><a class="dropdown-item" href="#">Personality</a></li>
+            <li><a class="dropdown-item" href="#">Gender</a></li>
+            
+          </ul>
+        </li>
 					</ul>
 					<form className="d-flex">
 						<input
@@ -43,14 +54,16 @@ function Navbar() {
 							Search
 						</button>
             <button className="me-2">Favorites</button>
-            <button className="me-2"><Link
-								to="/register"
+    
+    <button className="me-2"><Link 
+                to="/register"
 								className="nav-link"
 								aria-current="page"
 								href="#"
 							>
 								Register
 							</Link></button>
+    
             <button className="me-2" ><Link
 								to="/login"
 								className="nav-link"
@@ -59,6 +72,7 @@ function Navbar() {
 							>
 								Login
 							</Link></button>
+    
 					</form>
 				</div>
 			</div>
