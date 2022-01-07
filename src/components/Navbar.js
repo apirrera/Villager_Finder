@@ -32,16 +32,34 @@ function Navbar() {
 							</Link>
 						</li>
 						<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Species</a></li>
-            <li><a class="dropdown-item" href="#">Personality</a></li>
-            <li><a class="dropdown-item" href="#">Gender</a></li>
-            
-          </ul>
-        </li>
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Dropdown
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li>
+									<a class="dropdown-item" href="#">
+										Species
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">
+										Personality
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">
+										Gender
+									</a>
+								</li>
+							</ul>
+						</li>
 					</ul>
 					<form className="d-flex">
 						<input
@@ -53,26 +71,29 @@ function Navbar() {
 						<button className="btn btn-outline-success me-2" type="submit">
 							Search
 						</button>
-            <button className="me-2">Favorites</button>
-    
-    <button className="me-2"><Link 
-                to="/register"
+						<button className="me-2">Favorites</button>
+
+						<button className="me-2">
+							<Link
+								to="/register"
 								className="nav-link"
 								aria-current="page"
 								href="#"
 							>
 								Register
-							</Link></button>
-    
-            <button className="me-2" ><Link
+							</Link>
+						</button>
+
+						<button className="me-2">
+							<Link
 								to="/login"
 								className="nav-link"
 								aria-current="page"
 								href="#"
 							>
 								Login
-							</Link></button>
-    
+							</Link>
+						</button>
 					</form>
 				</div>
 			</div>
