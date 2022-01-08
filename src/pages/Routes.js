@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import RegistrationForm from "./registration/RegistrationPage";
 import LoginForm from "./login/LoginForm";
-import Villagers from "../components/Villagers";
+import Villagers from "./villagers/Villagers";
 
 function Routes() {
 	return (

@@ -21,42 +21,33 @@ function Navbar() {
 				</button>
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
-						<li className="nav-item">
-							<Link
-								to="/villagers"
-								className="nav-link"
-								aria-current="page"
-								href="#"
-							>
-								Villagers
-							</Link>
-						</li>
+
 						<li class="nav-item dropdown">
-							<a
+							<Link to="/villagers"
 								class="nav-link dropdown-toggle"
-								href="#"
 								id="navbarDropdown"
 								role="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
 							>
-								Dropdown
-							</a>
+								Villagers
+							</Link>
+							
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li>
-									<a class="dropdown-item" href="#">
+									<Link to="/villagers/species" class="dropdown-item">
 										Species
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a class="dropdown-item" href="#">
+									<Link to="/villagers/personality" class="dropdown-item">
 										Personality
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a class="dropdown-item" href="#">
+									<Link to="/villagers/gender" class="dropdown-item">
 										Gender
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</li>
@@ -78,7 +69,6 @@ function Navbar() {
 								to="/register"
 								className="nav-link"
 								aria-current="page"
-								href="#"
 							>
 								Register
 							</Link>
@@ -89,7 +79,6 @@ function Navbar() {
 								to="/login"
 								className="nav-link"
 								aria-current="page"
-								href="#"
 							>
 								Login
 							</Link>
