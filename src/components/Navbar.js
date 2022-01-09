@@ -22,9 +22,9 @@ function Navbar() {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-						<li class="nav-item dropdown">
+						<li className="nav-item dropdown">
 							<Link to="/villagers"
-								class="nav-link dropdown-toggle"
+								className="nav-link dropdown-toggle"
 								id="navbarDropdown"
 								role="button"
 								data-bs-toggle="dropdown"
@@ -33,19 +33,19 @@ function Navbar() {
 								Villagers
 							</Link>
 							
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 								<li>
-									<Link to="/villagers/species" class="dropdown-item">
+									<Link to="/villagers/species" className="dropdown-item">
 										Species
 									</Link>
 								</li>
 								<li>
-									<Link to="/villagers/personality" class="dropdown-item">
+									<Link to="/villagers/personality" className="dropdown-item">
 										Personality
 									</Link>
 								</li>
 								<li>
-									<Link to="/villagers/gender" class="dropdown-item">
+									<Link to="/villagers/gender" className="dropdown-item">
 										Gender
 									</Link>
 								</li>

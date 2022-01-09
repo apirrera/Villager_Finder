@@ -1,25 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-function Villagers() {
-	const [villagers, setVillagers] = useState([]);
 
-	useEffect(() => {
-		fetch("https://acnhapi.com/v1a/villagers")
-			.then((response) => response.json())
-			.then((response) => {
-				setVillagers(response);
-			})
-			.catch((error) => {
-				console.log(error);
-			});
-	}, []);
+function Villagers({villagers}) {
+	
 
 	const list = villagers.map((villager) => <div><img src={villager.image_uri} alt="" /> <p>{villager.name["name-USen"]}</p> </div>);
-
+	
+	
 	return (
 		<div>
-			this is villagers page <br></br>
+			<div>
+				this is villagers page <br></br>
 			{list}
+			</div>
+			
+
+	
 		</div>
 	);
 }
